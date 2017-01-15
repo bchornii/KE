@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://schemas.fabricam.com/2008/04/tasks/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://schemas.fabricam.com/2008/04/tasks/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://schemas.fabricam.com/2008/04/tasks/Imports">
+      <xsd:import namespace="http://schemas.fabricam.com/2008/04/tasks/" />
+      <xsd:import namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import namespace="http://schemas.datacontract.org/2004/07/MCTS_Tk_Chap1_Les1.Models" />
+      <xsd:import namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="TaskManagerService_AddTask_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddTask" />
+  </wsdl:message>
+  <wsdl:message name="TaskManagerService_AddTask_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddTaskResponse" />
+  </wsdl:message>
+  <wsdl:message name="TaskManagerService_GetTasksByAssignedName_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetTasksByAssignedName" />
+  </wsdl:message>
+  <wsdl:message name="TaskManagerService_GetTasksByAssignedName_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetTasksByAssignedNameResponse" />
+  </wsdl:message>
+  <wsdl:message name="TaskManagerService_GetTaskDescription_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetTaskDescription" />
+  </wsdl:message>
+  <wsdl:message name="TaskManagerService_GetTaskDescription_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetTaskDescriptionResponse" />
+  </wsdl:message>
+  <wsdl:message name="TaskManagerService_IsTaskCompeleted_InputMessage">
+    <wsdl:part name="parameters" element="tns:IsTaskCompeleted" />
+  </wsdl:message>
+  <wsdl:message name="TaskManagerService_IsTaskCompeleted_OutputMessage">
+    <wsdl:part name="parameters" element="tns:IsTaskCompeletedResponse" />
+  </wsdl:message>
+  <wsdl:message name="TaskManagerService_MarkTaskCompleted_InputMessage">
+    <wsdl:part name="parameters" element="tns:MarkTaskCompleted" />
+  </wsdl:message>
+  <wsdl:message name="TaskManagerService_MarkTaskCompleted_OutputMessage">
+    <wsdl:part name="parameters" element="tns:MarkTaskCompletedResponse" />
+  </wsdl:message>
+  <wsdl:message name="TaskManagerService_MarkTaskCompleted_FaultInfoFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:FaultInfo" />
+  </wsdl:message>
+  <wsdl:message name="TaskManagerService_DeleteTask_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteTask" />
+  </wsdl:message>
+  <wsdl:portType name="TaskManagerService">
+    <wsdl:operation name="AddTask">
+      <wsdl:input wsaw:Action="http://schemas.fabricam.com/2008/04/tasks/TaskManagerService/AddTask" message="tns:TaskManagerService_AddTask_InputMessage" />
+      <wsdl:output wsaw:Action="http://schemas.fabricam.com/2008/04/tasks/TaskManagerService/AddTaskResponse" message="tns:TaskManagerService_AddTask_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTasksByAssignedName">
+      <wsdl:input wsaw:Action="http://schemas.fabricam.com/2008/04/tasks/TaskManagerService/GetTasksByAssignedName" message="tns:TaskManagerService_GetTasksByAssignedName_InputMessage" />
+      <wsdl:output wsaw:Action="http://schemas.fabricam.com/2008/04/tasks/TaskManagerService/GetTasksByAssignedNameResponse" message="tns:TaskManagerService_GetTasksByAssignedName_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTaskDescription">
+      <wsdl:input wsaw:Action="http://schemas.fabricam.com/2008/04/tasks/TaskManagerService/GetTaskDescription" message="tns:TaskManagerService_GetTaskDescription_InputMessage" />
+      <wsdl:output wsaw:Action="http://schemas.fabricam.com/2008/04/tasks/TaskManagerService/GetTaskDescriptionResponse" message="tns:TaskManagerService_GetTaskDescription_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="IsTaskCompeleted">
+      <wsdl:input wsaw:Action="http://schemas.fabricam.com/2008/04/tasks/TaskManagerService/IsTaskCompeleted" message="tns:TaskManagerService_IsTaskCompeleted_InputMessage" />
+      <wsdl:output wsaw:Action="http://schemas.fabricam.com/2008/04/tasks/TaskManagerService/IsTaskCompeletedResponse" message="tns:TaskManagerService_IsTaskCompeleted_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="MarkTaskCompleted">
+      <wsdl:input wsaw:Action="http://schemas.fabricam.com/2008/04/tasks/TaskManagerService/MarkTaskCompleted" message="tns:TaskManagerService_MarkTaskCompleted_InputMessage" />
+      <wsdl:output wsaw:Action="http://schemas.fabricam.com/2008/04/tasks/TaskManagerService/MarkTaskCompletedResponse" message="tns:TaskManagerService_MarkTaskCompleted_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://schemas.fabricam.com/2008/04/tasks/TaskManagerService/MarkTaskCompletedFaultInfoFault" name="FaultInfoFault" message="tns:TaskManagerService_MarkTaskCompleted_FaultInfoFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteTask">
+      <wsdl:input wsaw:Action="http://schemas.fabricam.com/2008/04/tasks/TaskManagerService/DeleteTask" message="tns:TaskManagerService_DeleteTask_InputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+</wsdl:definitions>

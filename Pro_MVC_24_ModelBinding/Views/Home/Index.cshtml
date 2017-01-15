@@ -1,0 +1,13 @@
+﻿@model Pro_MVC_24_ModelBinding.Models.Person
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<h2>Person</h2>
+<div><label>ID:</label>@Html.DisplayFor(m => m.PersonId)</div>
+<div><label>First Name:</label>@Html.DisplayFor(m => m.FirstName)</div>
+<div><label>Last Name:</label>@Html.DisplayFor(m => m.LastName)</div>
+<div><label>Birthdate:</label>@Html.DisplayFor(m => m.BirthDate)</div>
+<div><label>City:</label>@Html.DisplayFor(m => m.HomeAddress.City)</div>
+<div><label>Country:</label>@Html.DisplayFor(m => m.HomeAddress.Country)</div>
+<div><label>Role:</label>@Html.DisplayFor(m => m.Role)</div>
