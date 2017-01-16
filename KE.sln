@@ -28,6 +28,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Web services", "Web service
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MCTS_Tk_Chap1_Les2_CustomHeader", "MCTS_Tk_Chap1_Les2_CustomHeader\MCTS_Tk_Chap1_Les2_CustomHeader.csproj", "{82E22676-5C5B-4325-8F9C-9F89C5DA0D92}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SportsStore", "SportsStore\SportsStore.csproj", "{A3244D16-DE6D-4CE9-BB32-2968512840FD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -74,6 +76,10 @@ Global
 		{82E22676-5C5B-4325-8F9C-9F89C5DA0D92}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{82E22676-5C5B-4325-8F9C-9F89C5DA0D92}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{82E22676-5C5B-4325-8F9C-9F89C5DA0D92}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A3244D16-DE6D-4CE9-BB32-2968512840FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A3244D16-DE6D-4CE9-BB32-2968512840FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A3244D16-DE6D-4CE9-BB32-2968512840FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A3244D16-DE6D-4CE9-BB32-2968512840FD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -82,5 +88,6 @@ Global
 		{F708B6DD-7738-4B13-B801-8CB9A6547695} = {9EA176E3-B460-4BBE-A764-980BE045A69B}
 		{35DD5536-BE2D-4806-AB27-BFAA1F53802C} = {9EA176E3-B460-4BBE-A764-980BE045A69B}
 		{82E22676-5C5B-4325-8F9C-9F89C5DA0D92} = {9EA176E3-B460-4BBE-A764-980BE045A69B}
+		{A3244D16-DE6D-4CE9-BB32-2968512840FD} = {9EA176E3-B460-4BBE-A764-980BE045A69B}
 	EndGlobalSection
 EndGlobal
