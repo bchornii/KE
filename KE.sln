@@ -42,6 +42,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02_NLog", "02_NLog\02_NLog.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03_TypeViewer", "03_TypeViewer\03_TypeViewer.csproj", "{E8DDDC7A-39C4-4A43-9E41-0913852FB9FA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04_ExternalAssemblyReflector", "04_ExternalAssemblyReflector\04_ExternalAssemblyReflector.csproj", "{99171B6A-4804-4D1C-948E-5B583837CE6A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -108,6 +110,10 @@ Global
 		{E8DDDC7A-39C4-4A43-9E41-0913852FB9FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E8DDDC7A-39C4-4A43-9E41-0913852FB9FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E8DDDC7A-39C4-4A43-9E41-0913852FB9FA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{99171B6A-4804-4D1C-948E-5B583837CE6A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{99171B6A-4804-4D1C-948E-5B583837CE6A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{99171B6A-4804-4D1C-948E-5B583837CE6A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{99171B6A-4804-4D1C-948E-5B583837CE6A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -121,5 +127,6 @@ Global
 		{9EAF6C7F-BF47-4C68-BE82-F2BC4E8B9895} = {C83DC914-E4D5-4966-A59C-8287E4349250}
 		{8753B227-EBF6-43FB-AD04-5327938D4EF6} = {C83DC914-E4D5-4966-A59C-8287E4349250}
 		{E8DDDC7A-39C4-4A43-9E41-0913852FB9FA} = {C83DC914-E4D5-4966-A59C-8287E4349250}
+		{99171B6A-4804-4D1C-948E-5B583837CE6A} = {C83DC914-E4D5-4966-A59C-8287E4349250}
 	EndGlobalSection
 EndGlobal
