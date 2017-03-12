@@ -186,7 +186,7 @@
             this.Controls.Add(this.txtInventory);
             this.Controls.Add(this.label1);
             this.Name = "MainForm";
-            this.Text = "Form1";
+            this.Text = "Inventory";
             this.Load += new System.EventHandler(this.MainForm_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
