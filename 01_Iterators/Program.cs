@@ -1,4 +1,6 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
+using System.Collections.Generic;
 
 namespace _01_Iterators
 {
@@ -6,9 +8,19 @@ namespace _01_Iterators
     {
         private static void Main()
         {
+            foreach (var val in GetCounter())
+            {
+                Console.WriteLine(val);
+            }
+
+            Console.Read();
         }
 
-        private static IEnumerator GetCounter()
+        // yield - будує стейт машину ітератора
+        // під капотом буде ітератор пропертя current якого
+        // буде отримувати значення, які визначаються при виконанні коду
+        // стейт машини
+        private static IEnumerable<int> GetCounter()
         {
             for (var count = 0; count < 10; count++)
             {
