@@ -6,6 +6,10 @@ using System.Web.Security;
 
 namespace Pro_MVC_18_Filters.Infrastructure
 {
+    // This filter works together with GoogleAccount controller
+    // and defines authentication logic for particular controller actions
+    // in the same time when whole application is using form authentication and
+    // credentials are defined in Web.Config file (<authentication/> element)
     public class GoogleAuthAttribute : FilterAttribute, IAuthenticationFilter
     {
         public void OnAuthentication(AuthenticationContext filterContext)
@@ -17,6 +21,9 @@ namespace Pro_MVC_18_Filters.Infrastructure
             }
         }
 
+        // This method is used to challenge the user for credentials by redirecting their
+        // browser to GoogleAccount controller (controller convenience methods for creating
+        // action result is not accessible, so we should use RouteValueDictionary)
         public void OnAuthenticationChallenge(AuthenticationChallengeContext filterContext)
         {
             // the null check is for handling final challenge request
