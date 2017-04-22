@@ -50,13 +50,15 @@ namespace Pro_MVC_24_ModelBinding.Controllers
 
         [HttpPost]
         public ActionResult CreatePersonManBind()
-        {
+        {            
             var model = new Person();
             UpdateModel(model);
             return View("Index", model);
         }
 
-        public ActionResult DisplaySummary([Bind(Prefix = "HomeAddress", Exclude = "Country")]AddressSummary summary) => View(summary);
+        public ActionResult DisplaySummary(
+            [Bind(Prefix = "HomeAddress", Exclude = "Country")] AddressSummary 
+            summary) => View(summary);
 
         // Binding of arrays
         //public ActionResult Names(string[] names)

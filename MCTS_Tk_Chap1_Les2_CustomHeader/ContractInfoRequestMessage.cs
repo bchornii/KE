@@ -9,6 +9,6 @@ namespace MCTS_Tk_Chap1_Les2_CustomHeader
         public string LicenceKey { get; set; }
 
         [MessageBodyMember]
-        public string PayLoad { get; set; }
+        public string CustomPayLoad { get; set; }
     }
 }

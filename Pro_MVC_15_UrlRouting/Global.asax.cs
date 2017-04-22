@@ -10,5 +10,12 @@ namespace Pro_MVC_15_UrlRouting
             AreaRegistration.RegisterAllAreas();
             RouteConfig.RegisterRoutes(RouteTable.Routes);
         }
+
+        public override void Init()
+        {            
+            PostAcquireRequestState += (sender, args) => { };
+        }
+
+        
     }
 }
